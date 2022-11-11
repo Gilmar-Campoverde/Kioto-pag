@@ -1,0 +1,131 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contenedor {
+	padding: 60px 0;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+nav {
+	text-align: right;
+	padding: 30px 50px 0 0;
+}
+
+nav>a {
+	color: #F8F7F7;
+	font-size: 22px;
+	font-weight: 300;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+nav>a:hover { /* Cuando se pasa el mouse por encima*/
+	text-decoration: underline;
+}
+
+.titulo {
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+header {
+	width: 100%;
+	height: 600px;
+	background: #2980B9; 
+	background: -webkit-linear-gradient(to top, hsla(237, 96%, 67%, 0.460),
+		hsla(195, 63%, 84%, 0.460), hsla(227, 55%, 62%, 0.460)),
+		url(../imagenes/inicio.jpg);
+	background: linear-gradient(to top, hsla(237, 96%, 67%, 0.460),
+		hsla(195, 63%, 84%, 0.460), hsla(227, 55%, 62%, 0.460)),
+		url(../imagenes/inicio.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+
+header .texto-header {
+	display: flex;
+	height: 430px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.texto-header h1{
+	font-size: 100px;
+	color: #8B0404;
+}
+.texto-header p{
+	font-size: 40px;
+	color: #CB4646;
+}
+
+.continfo {
+	background: hsla(31, 100%, 82%, 0.70);
+}
+.contenedor-info {
+	display: flex;
+	justify-content: space-evenly;
+	margin-left: 70px;
+}
+.contenedor-texto {
+	width: 20%;
+	font-size: 20px;
+	text-align: justify;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+.contenedor-texto h1{
+	font-size: 20px;
+	text-align: center;	
+}
+
+.imagen{
+	width: 50%;
+	margin-left: 70px;
+	margin-right: 100px;
+	margin-bottom: 50px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+
+
+footer{
+    background: #F37558;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 3px solid #FFB53F;
+}
+
+.contenedor-foo{
+    text-align: center;
+}
+
+.contenedor-foo h5{
+    color: #fff;
+    font-size: 24px;
+    border-bottom: 3px solid #FFB53F;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.contenedor-foo p{
+	font-size: 22px;
+    color: #ccc;
+}
