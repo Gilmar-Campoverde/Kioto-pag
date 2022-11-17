@@ -4,7 +4,7 @@
 <html>
 <head>
 <title>Kioto</title>
-<link href="images/escudo.png">
+<link rel="shortcut icon" href ="imagenes/icono.png" type = "image/x-icon">
 <link href="css/estilos.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -12,8 +12,8 @@
 
 	<header>
 		<nav>
-			<a href="#">Inicio</a> <a href="ubicacion.jsp">Lugares de interés</a>
-			<a href="#Contacto">Platos tipicos</a> <a href="#Contacto">Hospedaje</a>
+			<a href="#">Inicio</a> <a href="lugares.jsp">Lugares de interés</a> <a
+				href="comida.jsp">Platos tipicos</a> <a href="hospedaje.jsp">Hospedaje</a>
 			<a href="#Contacto">Mapa</a> <a href="#Contacto">Formulario</a>
 		</nav>
 		<section class="texto-header">
@@ -37,12 +37,13 @@
 				</div>
 				<div class="contenedor-texto">
 					<h1>Altitud y Superficie</h1>
-					<p>Tiene una altura Máxima de 971 ms.n.m. y una altura Mínima 9 ms.n.m.
-					Tambien cuenta con una superficie de 827,83 km²</p>
+					<p>Tiene una altura Máxima de 971 ms.n.m. y una altura Mínima 9
+						ms.n.m. Tambien cuenta con una superficie de 827,83 km²</p>
 				</div>
 				<div class="contenedor-texto">
 					<h1>Población</h1>
-					<p>Kioto cuenta con un total 1464 millones de habitantes y una densidad de 1768,14 hab/km² </p>
+					<p>Kioto cuenta con un total 1464 millones de habitantes y una
+						densidad de 1768,14 hab/km²</p>
 				</div>
 				<img src="imagenes/inicio2.jpg" alt="" class="imagen">
 			</div>

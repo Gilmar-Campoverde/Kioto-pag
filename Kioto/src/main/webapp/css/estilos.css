@@ -11,6 +11,7 @@
 	margin: auto;
 	overflow: hidden;
 }
+
 nav {
 	text-align: right;
 	padding: 30px 50px 0 0;
@@ -36,8 +37,8 @@ nav>a:hover { /* Cuando se pasa el mouse por encima*/
 
 header {
 	width: 100%;
-	height: 600px;
-	background: #2980B9; 
+	height: 500px;
+	background: #2980B9;
 	background: -webkit-linear-gradient(to top, hsla(237, 96%, 67%, 0.460),
 		hsla(195, 63%, 84%, 0.460), hsla(227, 55%, 62%, 0.460)),
 		url(../imagenes/inicio.jpg);
@@ -58,11 +59,13 @@ header .texto-header {
 	flex-direction: column;
 	text-align: center;
 }
-.texto-header h1{
+
+.texto-header h1 {
 	font-size: 100px;
 	color: #8B0404;
 }
-.texto-header p{
+
+.texto-header p {
 	font-size: 40px;
 	color: #CB4646;
 }
@@ -70,11 +73,13 @@ header .texto-header {
 .continfo {
 	background: hsla(31, 100%, 82%, 0.70);
 }
+
 .contenedor-info {
 	display: flex;
 	justify-content: space-evenly;
 	margin-left: 70px;
 }
+
 .contenedor-texto {
 	width: 20%;
 	font-size: 20px;
@@ -82,50 +87,202 @@ header .texto-header {
 	margin-right: 15px;
 	margin-left: 15px;
 }
-.contenedor-texto h1{
+
+.contenedor-texto h1 {
 	font-size: 20px;
-	text-align: center;	
+	text-align: center;
 }
 
-.imagen{
+.imagen {
 	width: 50%;
 	margin-left: 70px;
 	margin-right: 100px;
 	margin-bottom: 50px;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
 }
-
-
-
-footer{
-    background: #F37558;
-    padding: 60px 0 30px 0;
-    margin: auto;
-    overflow: hidden;
+/*-----------------------HOSPEDAJE------------------------------*/
+.contenedorCard {
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
 }
 
-.contenedor-footer{
-    display: flex;
-    width: 90%;
-    justify-content: space-evenly;
-    margin: auto;
-    padding-bottom: 50px;
-    border-bottom: 3px solid #FFB53F;
+.card {
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background: #fff;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
 }
 
-.contenedor-foo{
-    text-align: center;
+.card:hover {
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+	transform: translateY(-3%);
 }
 
-.contenedor-foo h5{
-    color: #fff;
-    font-size: 24px;
-    border-bottom: 3px solid #FFB53F;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+.card img {
+	width: 100%;
+	height: 210px;
 }
 
-.contenedor-foo p{
+.card .contenido-card {
+	padding: 15px;
+	text-align: center;
+}
+
+.card .contenido-card h3 {
+	margin-bottom: 18px;
+	color: #161616;
+}
+
+.card .contenido-card li {
+	line-height: 1.8;
+	color: #825A5A;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+.card .contenido-card a {
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #F6624B;
+	border: 1px solid #F6624B;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+
+.card .contenido-card a:hover {
+	background: #F6624B;
+	color: #fff;
+}
+
+/*-----------------------FIN HOSPEDAJE------------------------------*/
+/*-----------------------INICIO LUGARES TURISTICOS------------------------------*/
+.contenedorBox {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1500px;
+	margin: auto;
+}
+
+.box {
+	width: 450px;
+	height: 550px;
+	position: relative;
+	overflow: hidden;
+	margin: 20px;
+	border: 3px solid #fff;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+.box img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.box h2 {
+	align-items: center;
+	text-align: center;
+}
+
+.capaBox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	transform: scale(0);
+	transition: .8s ease;
+}
+
+.capaBox ul {
+	margin-top: 215px;
+	margin-left: 15px;
+	margin-right: 15px;
+	font-size: 20px;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+	color: #fff;
+}
+
+.box:hover .capaBox {
+	transform: scale(1);
+}
+/*-----------------------FINLUGARES TURISTICOS------------------------------*/
+/*-----------------------INICIO PLATOS TIPICOS------------------------------*/
+.tab table {
+	margin-left: 500px;
+	margin-right: 500px;
+}
+
+.tab img {
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	width: 280px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+	width: 280px;
+}
+
+.tab iframe {
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	width: 280px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+.tab th, td {
+	padding: 10px;
+	font-size: 20px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+/*-----------------------FIN PLATOS TIPICOS------------------------------*/
+footer {
+	background: #F37558;
+	padding: 60px 0 30px 0;
+	margin: auto;
+	overflow: hidden;
+}
+
+.contenedor-footer {
+	display: flex;
+	width: 90%;
+	justify-content: space-evenly;
+	margin: auto;
+	padding-bottom: 50px;
+	border-bottom: 3px solid #FFB53F;
+}
+
+.contenedor-foo {
+	text-align: center;
+}
+
+.contenedor-foo h5 {
+	color: #fff;
+	font-size: 24px;
+	border-bottom: 3px solid #FFB53F;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+.contenedor-foo p {
 	font-size: 22px;
-    color: #ccc;
+	color: #ccc;
 }
