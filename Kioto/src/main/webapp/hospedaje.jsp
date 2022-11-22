@@ -13,8 +13,8 @@
 		<nav>
 			<a href="index.jsp">Inicio</a> <a href="lugares.jsp">Lugares de
 				interés</a> <a href="comida.jsp">Platos tipicos</a> <a
-				href="hospedaje.jsp">Hospedaje</a> <a href="#Contacto">Mapa</a> <a
-				href="#Contacto">Formulario</a>
+				href="hospedaje.jsp">Hospedaje</a> <a href="mapa.jsp">Mapa</a> <a
+				href="formulario.jsp">Formulario</a>
 		</nav>
 		<section class="texto-header">
 			<h1>Hospedaje</h1>

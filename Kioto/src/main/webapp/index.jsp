@@ -14,7 +14,7 @@
 		<nav>
 			<a href="#">Inicio</a> <a href="lugares.jsp">Lugares de interés</a> <a
 				href="comida.jsp">Platos tipicos</a> <a href="hospedaje.jsp">Hospedaje</a>
-			<a href="#Contacto">Mapa</a> <a href="#Contacto">Formulario</a>
+			<a href="mapa.jsp">Mapa</a> <a href="formulario.jsp">Formulario</a>
 		</nav>
 		<section class="texto-header">
 			<h1>Kioto</h1>
@@ -25,6 +25,12 @@
 	</header>
 <body>
 	<main>
+	<section class="continfo">
+	<br>
+		<div class="slide">
+		</div>
+	</section>
+	
 		<section class="continfo">
 			<h1 class="titulo">Datos demográficos</h1>
 			<div class="contenedor-info">

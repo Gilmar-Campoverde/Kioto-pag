@@ -93,6 +93,25 @@ header .texto-header {
 	text-align: center;
 }
 
+.slide {
+	background-image: url("../imagenes/Toji.jpg");
+	background-size: 100% 100%;
+	top: 50%;
+	left: 50%;
+	margin-left: 400px;
+	width: 700px;
+	height: 400px;
+	border-radius: 10px;
+	animation: slide 15s infinite linear;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+@keyframes slide{
+	0% {background-image: url(../imagenes/Toji.jpg);}
+	25% {background-image: url(../imagenes/inicio2.jpg);}
+	50% {background-image: url(../imagenes/Kiyomizudera.jpg);}
+	75% {background-image: url(../imagenes/Fushimi.jpg);}
+}
+
 .imagen {
 	width: 50%;
 	margin-left: 70px;
@@ -225,8 +244,7 @@ header .texto-header {
 /*-----------------------FINLUGARES TURISTICOS------------------------------*/
 /*-----------------------INICIO PLATOS TIPICOS------------------------------*/
 .tab table {
-	margin-left: 500px;
-	margin-right: 500px;
+	margin-left: 400px;
 }
 
 .tab img {
@@ -248,12 +266,35 @@ header .texto-header {
 
 .tab th, td {
 	padding: 10px;
+	width: 100px;
 	font-size: 20px;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
+	font-size: 20px;
 }
 /*-----------------------FIN PLATOS TIPICOS------------------------------*/
+/*-----------------------INICIO MAPA------------------------------*/
+.mapa h5 {
+	font-size: 30px;
+	text-align: center;
+}
+
+.mapa iframe {
+	margin-bottom: 15px;
+	margin-left: 300px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .8);
+}
+
+.mapatab {
+	margin-left: 270px;
+}
+
+/*-----------------------FIN MAPA------------------------------*/
+/*-----------------------INICIO FORMULARIO------------------------------*/
+
+
+/*-----------------------FIN FORMULARIO------------------------------*/
 footer {
 	background: #F37558;
 	padding: 60px 0 30px 0;

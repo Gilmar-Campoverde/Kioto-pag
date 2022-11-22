@@ -13,8 +13,8 @@
 		<nav>
 			<a href="index.jsp">Inicio</a> <a href="lugares.jsp">Lugares de
 				interés</a> <a href="comida.jsp">Platos tipicos</a> <a
-				href="hospedaje.jsp">Hospedaje</a> <a href="#Contacto">Mapa</a> <a
-				href="#Contacto">Formulario</a>
+				href="hospedaje.jsp">Hospedaje</a> <a href="mapa.jsp">Mapa</a> <a
+				href="formulario.jsp">Formulario</a>
 		</nav>
 		<section class="texto-header">
 			<h1>Lugares de interés</h1>
@@ -31,7 +31,7 @@
 				<div class="capaBox">
 					<ul>
 						<li>El To-ji fue fundado al comienzo del Periodo Heian en el
-							año 796.</li>
+							año 796 (01/01/796).</li>
 						<li>La pagoda del To-ji tiene 54,8 m. de altura y constituye
 							la torre de madera más alta de Japón</li>
 						<li>To-ji se encuentra a tan solo 15 min desde la estación de
