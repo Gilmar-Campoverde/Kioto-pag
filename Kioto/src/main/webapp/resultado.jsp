@@ -19,12 +19,14 @@
 </header>
 <body>
 
-		<%
+	<%
 		String pregunta1=request.getParameter("p1");
 		String pregunta2=request.getParameter("p2");
 		String pregunta3=request.getParameter("p3");
 		String pregunta4=request.getParameter("p4");
 		String pregunta5=request.getParameter("p5");
+	 	String nombre=request.getParameter("txtnombre");
+		String foto=request.getParameter("txtfoto");
 	 	
 	 	int nota1=1;
 	 	int nota2=1;
@@ -58,15 +60,20 @@
 	 	}else{
 	 		nota5=0;
 	 	}
-	 	
 	 	notaf=nota1+nota2+nota3+nota4+nota5;
 		
-    String nom=request.getParameter("nombre");
-    usdatos dat = new usdatos();
-    dat.ingresarUsuario(nom, notaf);
+	 	notas notas = new notas();
+		int idnotas=notas.consultarID()+1;
+		int idusuario=notas.consultarID()+1;
+		notas.ingresarN(idnotas, notaf, nombre);
+		
+	 	usdatos u = new usdatos();
+	 	u.ingresarUsuario(idusuario,nombre,foto);
 
-   /* out.print(dat.consultarUsuarios());*/
+		out.print(u.consultarUsuarios());
+
 	%>
+
 
 </body>
 </html>

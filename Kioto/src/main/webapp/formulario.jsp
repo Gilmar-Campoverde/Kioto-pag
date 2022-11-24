@@ -30,6 +30,7 @@
 </header>
 
 <body>
+
 	<div class="container text-center">
 		<div class="row">
 			<div class="col-sm-5 col-md-6">
@@ -39,16 +40,30 @@
 						<label for="formGroupExampleInput" class="form-label">Ingrese
 							su Nombre: </label> <input type="text" class="form-control"
 							id="formGroupExampleInput" placeholder="Ejemplo: Juam Rizo"
-							name="nombre">
+							name="txtnombre">
 					</div>
 					<h7>Subir una foto: </h7>
 					<br>
 					<div class="input-group mb-3">
 						<input type="file" class="form-control" id="inputGroupFile02"
-							accept=".jpg" name="foto"> <label class="input-group-text"
+							accept=".jpg" name="txtfoto" > <label class="input-group-text"
 							for="inputGroupFile02">Subir</label>
 					</div>
 					<br>
+					<script>
+					let foto=document.getElementById("inputGroupFile02");
+					let setDataFoto=document.getElementById("txtfoto");
+					
+					foto.addEventListener("change", function() {
+			  		console.log(this.files);
+						const reader = new FileReader();
+			  		reader.addEventListener("load", () => {
+			  		setDataFoto.value=reader.result;
+			  		});
+			  		reader.readAsDataURL(this.files[0]);
+			  		console.log(reader);
+					});		 
+					</script>
 
 					<h7>Prueba de conocimiento sobre Kioto </h7>
 					<br> <br> 
@@ -92,29 +107,37 @@
 					<br><br>
 			</div>
 
-
 			<div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
 				<div id="resultado">
 					<h8> Resultados </h8>
 				</div>
+				<form action="resultado2.jsp" method="post">
+				<br>
+				<p>Ingrese su nombre: <% 
+						usdatos u =new usdatos();
+						String combo = u.mostrarUsuarios();
+						out.print(combo);
+						 %> </p>
 				<br>
 				<h7>Comentario sobre la página: </h7>
 				<br>
 				<div class="form-floating">
 					<textarea class="form-control" placeholder="Leave a comment here"
-						id="floatingTextarea2" style="height: 100px"></textarea>
+						id="floatingTextarea2" style="height: 100px" name="txtsug"></textarea>
 					<label for="floatingTextarea2">Deje su comentario aquí</label><br>
-					<button onclick="pulsar2()" class="btn btn-success">Puntuar</button>
 				</div>
+				<div>
 				<br> <label for="customRange2" class="form-label">Puntue
-					la página</label> <input type="range" class="form-range" min="0" max="3"
-					id="customRange2">
-				<button onclick="pulsar()" class="btn btn-success">Puntuar</button>
-
+					la página</label> <input type="range" name="txtrango" class="form-range" min="0" max="3" value="1"
+					id="customRange2" step="1" id="customRange2" list="valoracion" oninput="rangeValue.innerText = this.value">
+					
+					<label style="font-size: 30px ;padding: 8px 12px;  " id="rangeValue">1  </label>	
+				</div>
+				<input type="submit" />
+				</form>
 			</div>
 		</div>
 	</div>
-
 
 </body>
 </html>
